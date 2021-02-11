@@ -79,7 +79,7 @@ export default class Responsive extends Component {
             </div>
             <div className="desc">
               <div className="name">James Oyanna</div>
-              <div className="title">Co-Founder</div>
+              <div className="title">Web Developer</div>
             </div>
             <div className="icon">
               <span onClick={() => window.open("//facebook.com/", "_blank")}>

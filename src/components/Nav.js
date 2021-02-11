@@ -94,7 +94,7 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
       <div id='header'></div>
       <div className='logo'>
         <img
-          src="./img/logowhite.png"
+          src="./img/nesh2.png"
           className="img-fluid"
           alt="#"
         />

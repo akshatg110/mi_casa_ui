@@ -18,3 +18,11 @@
 ### or
 
 ### npm install
+
+
+##### Node.js and NPM : You can download Node.js from https://nodejs.org. NPM comes bundled with Node.js.
+##### NPM : You must have to npm install packages. You can do this by running npm install from the root of your project to install all the necessary dependencies.
+##### Run npm start for a dev server. Navigate to http://localhost:3000/ . The app will automatically reload if you change any of the source files.
+##### Run npm run build to build the project. The build artifacts will be stored in the build/ directory. Use the npm run build --prod flag for a production build.
+
+

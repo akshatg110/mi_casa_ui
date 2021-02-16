@@ -18,7 +18,7 @@ export default () => (
           <div className='col-lg-3 col-md-6'>
             <div className='featurehome'>
               <div className='img'>
-                <i class="fa fa-list-alt"></i>
+                <i className="fa fa-list-alt"></i>
               </div>
               <div className='text'>
                 Make a

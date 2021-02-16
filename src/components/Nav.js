@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Link } from "react-router-dom";
 import {
   Wrapper,
   Container,
@@ -91,57 +92,85 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
 
   return (
     <header>
-      <div id='header'></div>
-      <div className='logo'>
-        <img
-          src="./img/nesh2.png"
-          className="img-fluid"
-          alt="#"
-        />
-        <span className='callus'>
-          Call Us: (+234) 8012345678
-        </span>
+      <div id="header"></div>
+      <div className="logo">
+        <Link to="/">
+          <img src="./img/nesh2.png" className="img-fluid" alt="#" />
+        </Link>
+        <span className="callus">Call Us: (+234) 8012345678</span>
       </div>
       <Wrapper open={isOn} shouldAnimate={shouldAnimate}>
-        <Overlaybg open={isOn} shouldAnimate={shouldAnimate} onClick={closeHandler}/>
+        <Overlaybg
+          open={isOn}
+          shouldAnimate={shouldAnimate}
+          onClick={closeHandler}
+        />
         <Container
           open={isOn}
           onClick={closeHandler}
-          hasBackground={hasBackground}>
+          hasBackground={hasBackground}
+        >
           <NavButton open={isOn} />
         </Container>
-        <Body className='midwrpr' open={isOn} shouldAnimate={shouldAnimate}>
-          <div className='conPage'>
-              <Page className='mainBtn' variant="home" onClick={() => setLinkHandler("home")}>
-                  <LinkTag>Home</LinkTag>
-              </Page>
-              <Page className='mainBtn' variant="about" onClick={() => setLinkHandler("about")}>
-                  <LinkTag>About</LinkTag>
-              </Page>
-              <Page className='mainBtn' variant="work" onClick={() => setLinkHandler("work")}>
-                  <LinkTag>Projects</LinkTag>
-              </Page>
-              <Page className='mainBtn' variant="about" onClick={() => setLinkHandler("news")}>
-                  <LinkTag>News</LinkTag>
-              </Page>
-              <Page className='mainBtn' variant="about" onClick={() => setLinkHandler("contact")}>
-                  <LinkTag>Contact</LinkTag>
-              </Page>
+        <Body className="midwrpr" open={isOn} shouldAnimate={shouldAnimate}>
+          <div className="conPage">
+            <Page
+              className="mainBtn"
+              variant="home"
+              onClick={() => setLinkHandler("home")}
+            >
+              <LinkTag>Home</LinkTag>
+            </Page>
+            <Page
+              className="mainBtn"
+              variant="about"
+              onClick={() => setLinkHandler("about")}
+            >
+              <LinkTag>About</LinkTag>
+            </Page>
+            <Page
+              className="mainBtn"
+              variant="work"
+              onClick={() => setLinkHandler("work")}
+            >
+              <LinkTag>Projects</LinkTag>
+            </Page>
+            <Page
+              className="mainBtn"
+              variant="about"
+              onClick={() => setLinkHandler("news")}
+            >
+              <LinkTag>News</LinkTag>
+            </Page>
+            <Page
+              className="mainBtn"
+              variant="about"
+              onClick={() => setLinkHandler("contact")}
+            >
+              <LinkTag>Contact</LinkTag>
+            </Page>
           </div>
 
-          <div className='info'>
+          <div className="info">
             <span>(+234) 801234567</span>
-            <span className='link'>support@neshdecor.com</span>
+            <span className="link">support@neshdecor.com</span>
             <span>Admiralty lane, Lekki, Lagos</span>
           </div>
-
         </Body>
-        <SocialContainer className='soc-icon' open={isOn}>
-            <span>Follow us:</span>
-            <span className='socicon'><i className="fa fa-facebook-f"></i></span>
-            <span className='socicon'><i className="fa fa-linkedin"></i></span>
-            <span className='socicon'><i className="fa fa-twitter"></i></span>
-            <span className='socicon'><i className="fa  fa-instagram"></i></span>
+        <SocialContainer className="soc-icon" open={isOn}>
+          <span>Follow us:</span>
+          <span className="socicon">
+            <i className="fa fa-facebook-f"></i>
+          </span>
+          <span className="socicon">
+            <i className="fa fa-linkedin"></i>
+          </span>
+          <span className="socicon">
+            <i className="fa fa-twitter"></i>
+          </span>
+          <span className="socicon">
+            <i className="fa  fa-instagram"></i>
+          </span>
         </SocialContainer>
       </Wrapper>
     </header>

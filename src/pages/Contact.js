@@ -64,17 +64,17 @@ const Contact = ({ history }) => {
                 <div className='heading'>Our Office</div>
                 <div className='list'>
                   <i className="fa fa-map-marker"></i>
-                  70 Washington Square South New York, NY 10012, United States
+                 Plot 9A, Admiralty, Lekki phase 1
                 </div>
                 <div className='list'>
                   <i className="fa fa-envelope-o"></i>
-                  <a href='mailto:contact_info@homekins.com' target='_blank' rel='noopener noreferrer'>
-                    contact_info@homekins.com
+                  <a href='mailto:engrjayt200@gmail.com' target='_blank' rel='noopener noreferrer'>
+                    info@neshdecor.com
                   </a>
                 </div>
                 <div className='list'>
                   <i className="fa fa-phone"></i>
-                  +92 423 567 7
+                  +234 8030384958
                 </div>
                 </div>
               </div>

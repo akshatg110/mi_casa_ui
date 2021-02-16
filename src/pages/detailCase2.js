@@ -61,7 +61,7 @@ class Case extends Component {
       <ScrollTop>
         <CaseWrapper>
         <Reveal effect="fadeIn">
-          <Hero className='mainhero' style={{ backgroundImage: "url('./img/projects/big/img3.jpg')" }}>
+          <Hero className='mainhero' style={{ backgroundImage: "url('./img/projects/big/bg4.png')" }}>
               <div className='herocaption'>
                 <BackButton className='backdetail'
                   onClick={() => this.setState({ toBack: true, hasBackground: false })}
@@ -89,10 +89,7 @@ class Case extends Component {
               is plenty of storage for all your electronics and knick-knacks. 
               go for this classic wood and white combo or pick shades that go 
               well with the rest of your decor</p>
-              <p className='content'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-              sed diam nonummy nibh euismod tincidunt ut. 
-              magna aliquam erat volutpat enim ad minim veniam. 
-              Duis autem vel eum iriure dolor in hendrerit in.</p>
+              <p className='content'>great design decoration.</p>
             </div>
             <div className='col-md-4 sticky'>
               <ul className='detailproject'>
@@ -102,11 +99,11 @@ class Case extends Component {
                 </li>
                 <li>
                   <span className='tile'>Client:</span>
-                  <span>Homekins Design</span>
+                  <span>Lagos Multi-purpose Hall</span>
                 </li>
                 <li>
                   <span className='tile'>Completed:</span>
-                  <span>Sept 30, 2020</span>
+                  <span>Augt 12, 2020</span>
                 </li>
                 <li>
                   <span className='tile'>Project type:</span>

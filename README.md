@@ -25,4 +25,6 @@
 ##### Run npm start for a dev server. Navigate to http://localhost:3000/ . The app will automatically reload if you change any of the source files.
 ##### Run npm run build to build the project. The build artifacts will be stored in the build/ directory. Use the npm run build --prod flag for a production build.
 
+### Folder Structure
+![folder](https://user-images.githubusercontent.com/26815113/108006535-00c0a900-6ffc-11eb-959f-b52b296afff1.PNG)
 

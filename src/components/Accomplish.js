@@ -11,7 +11,7 @@ export default () => (
           </div>
           <div className='row m-2-hor'>
             <div className='col-12 mb-5'>
-              <div className='heading'>An Accomplish</div>
+              <div className='heading'>Our Accomplishments</div>
             </div>
             <div className='col-12'>
               <div className='listcomplish'>

@@ -89,15 +89,18 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
       window.removeEventListener("scroll", scrollCallBack);
     };
     }, []);
-
+  
   return (
     <header>
       <div id="header"></div>
       <div className="logo">
-        <Link to="/">
-          <img src="./img/nesh2.png" className="img-fluid" alt="#" />
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          {/* <img src="./img/nesh2.png" className="img-fluid" alt="#" /> */}
+          <h1 style={{fontSize: 40,fontFamily: "Cochin",fontWeight: "bold",color:'white'}}>
+            Mi Casa
+          </h1>
         </Link>
-        <span className="callus">Call Us: (+234) 8012345678</span>
+        {/* <span className="callus">Call Us: (+91) 8012345678</span> */}
       </div>
       <Wrapper open={isOn} shouldAnimate={shouldAnimate}>
         <Overlaybg
@@ -153,8 +156,8 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
 
           <div className="info">
             <span>(+234) 801234567</span>
-            <span className="link">support@neshdecor.com</span>
-            <span>Admiralty lane, Lekki, Lagos</span>
+            <span className="link">support@micasa.com</span>
+            <span>Gurgaon, Haryana</span>
           </div>
         </Body>
         <SocialContainer className="soc-icon" open={isOn}>

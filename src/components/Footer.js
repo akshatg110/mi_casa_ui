@@ -12,11 +12,11 @@ export default () => (
             <h2>About Us</h2>
           </div>
           <div className='content'>
-             <p>Nesh Decor is a dedicated home interior design company that work with you tirelessly 
+             <p>Mi Casa is a dedicated home interior design company that work with you tirelessly 
              to tie your style with their design expertise, creating 
              the perfect interior design concept.</p>
           </div>
-          <div className='link-call' onClick={()=> window.open("mailto:support@Homekins.com", "_self")}>support@neshdecor.com</div>
+          <div className='link-call' onClick={()=> window.open("mailto:support@micasa.com", "_self")}>support@micasa.com</div>
         </div>
       </div>
       <div className='col-md-2'>

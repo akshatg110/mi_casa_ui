@@ -19,10 +19,10 @@ const Home = ({ history }) => {
 
   return (
     <div>
-
+{/* 
       <Efect/>
       <Efect1/>
-      <Efect2/>
+      <Efect2/> */}
 
       <Reveal effect="fadeIn">
         <section className="jumbotron jumbomain">

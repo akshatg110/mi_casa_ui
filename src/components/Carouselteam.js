@@ -72,13 +72,13 @@ export default class Responsive extends Component {
           <CustomSlide className="itm" index={1}>
             <div className="bg">
               <img
-                src="./img/team/jay-man.png"
+                src="./img/team/pp.jpeg"
                 className="img-fluid"
                 alt="Imageteam"
               />
             </div>
             <div className="desc">
-              <div className="name">James Oyanna</div>
+              <div className="name">Akshat Goyal</div>
               <div className="title">Web Developer</div>
             </div>
             <div className="icon">

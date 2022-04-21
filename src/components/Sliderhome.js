@@ -30,7 +30,7 @@ const content = [
 ];
 
 export default () => (
-  <Slider className="slider-wrapper" autoplay={6000}>
+  <Slider className="slider-wrapper" autoplay={2000}>
             {content.map((item, index) => (
               <div
                 key={index}

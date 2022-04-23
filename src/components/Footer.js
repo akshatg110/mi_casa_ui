@@ -76,7 +76,7 @@ export default () => (
     <div className='subfooter'>
       <div className='row m-2-hor'>
         <div className='col-md-6'>
-          <div className='content'>© Copyrights 2021 Neshdecor All rights reserved.</div>
+          <div className='content'>© Copyrights 2021 MiCasa All rights reserved.</div>
         </div>
       </div>
     </div>

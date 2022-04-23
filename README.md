@@ -10,7 +10,7 @@ The project is built with React js and Bootstrap. It implements bootstrap 4 pack
 
 #### Clone the project
 
-#### git clone https://github.com/jamesoyanna/nesh-decor.git
+#### git clone https://github.com/akshatg110/mi_casa_ui.git
 
 #### Install the dependencies:
 

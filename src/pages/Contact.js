@@ -69,7 +69,7 @@ const Contact = ({ history }) => {
                 <div className='list'>
                   <i className="fa fa-envelope-o"></i>
                   <a href='mailto:engrjayt200@gmail.com' target='_blank' rel='noopener noreferrer'>
-                    info@neshdecor.com
+                    info@micasa.com
                   </a>
                 </div>
                 <div className='list'>

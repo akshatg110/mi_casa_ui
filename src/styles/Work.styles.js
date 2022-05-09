@@ -35,4 +35,10 @@ export const Overlay = styled.div`
   
 `;
 
+export const pageWrapper = styled.div`
+    max-width:none;
+    padding:0
+`
 
+export const mainContent = styled.div`
+`

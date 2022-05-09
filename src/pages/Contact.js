@@ -3,11 +3,7 @@ import { withRouter } from "react-router-dom";
 import emailjs from 'emailjs-com';
 import Reveal from 'react-reveal/Reveal';
 
-import SimpleMap from '../components/Map';
-import Footer from '../components/Footer';
-
-import { Efect, Efect1, Efect2  } from "../styles/effect.styles";
-  
+// import SimpleMap from '../components/Map';
 
 const Contact = ({ history }) => {
 
@@ -31,9 +27,9 @@ const Contact = ({ history }) => {
 
   return (
     <div>
-      <Efect/>
+      {/* <Efect/>
       <Efect1/>
-      <Efect2/>
+      <Efect2/> */}
 
       <div className="jumbotron head"/>
 
@@ -50,9 +46,9 @@ const Contact = ({ history }) => {
       <Reveal effect="fadeInUp">
        <section className='container pt-0'>
           <div className='row'>
-            <div className='col-12'>
+            {/* <div className='col-12'>
               <SimpleMap/>
-            </div>
+            </div> */}
             <div className='col-md-6'>
             <div className="text-side">
               <h3 className="heading">Talk with our expert designers </h3>
@@ -106,7 +102,7 @@ const Contact = ({ history }) => {
 
       
 
-      <Footer />
+      {/* <Footer /> */}
 
     </div>
     

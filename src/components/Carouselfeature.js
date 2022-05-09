@@ -78,14 +78,6 @@ export default class Responsive extends Component {
                 alt="Imageteam"
               />
             </div>
-            <div className="desc">
-              <div className="name">Interior</div>
-              <div className="content">
-                Make the most of compact spaces with space saving furniture that
-                are ingenuous and innovative. Transform your living spaces with
-                interior designs that make optimal use of available space.
-              </div>
-            </div>
           </CustomSlide>
 
           <CustomSlide className="itm" index={2}>
@@ -95,14 +87,6 @@ export default class Responsive extends Component {
                 className="img-fluid"
                 alt="Imageteam"
               />
-            </div>
-            <div className="desc">
-              <div className="name">Architecture</div>
-              <div className="content">
-                Residential Interior As an interior design company at the
-                forefront of design and market trends, it shouldn’t come as a
-                surprise.
-              </div>
             </div>
           </CustomSlide>
 
@@ -114,14 +98,6 @@ export default class Responsive extends Component {
                 alt="Imageteam"
               />
             </div>
-            <div className="desc">
-              <div className="name">Exterior</div>
-              <div className="content">
-                Office Designs Nothing depicts a fundamental change in a
-                company’s life like creating new office space or refurbishing
-                old ones.
-              </div>
-            </div>
           </CustomSlide>
 
           <CustomSlide className="itm" index={4}>
@@ -131,14 +107,6 @@ export default class Responsive extends Component {
                 className="img-fluid"
                 alt="Imageteam"
               />
-            </div>
-            <div className="desc">
-              <div className="name">Furniture</div>
-              <div className="content">
-                Make the most of compact spaces with space saving furniture that
-                are ingenuous and innovative. Transform your living spaces with
-                interior designs that make optimal use of available space.
-              </div>
             </div>
           </CustomSlide>
         </Slider>

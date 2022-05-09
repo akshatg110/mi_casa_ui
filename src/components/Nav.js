@@ -31,21 +31,21 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
             setState(false);
             setLink("");
             break;
-          case "work":
-            history.push("/work");
+          case "project":
+            history.push("/project");
             setState(false);
             setLink("");
             break;
-          case "news":
-            history.push("/news");
+          case "testimonial":
+            history.push("/testimonial");
             setState(false);
             setLink("");
             break;
-          case "contact":
-            history.push("/contact");
-            setState(false);
-            setLink("");
-            break;
+          // case "contact":
+          //   history.push("/contact");
+          //   setState(false);
+          //   setLink("");
+          //   break;
           default:
             setLink("");
         }
@@ -96,7 +96,7 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
       <div className="logo">
         <Link to="/" style={{ textDecoration: 'none' }}>
           {/* <img src="./img/nesh2.png" className="img-fluid" alt="#" /> */}
-          <h1 style={{fontSize: 40,fontFamily: "Cochin",fontWeight: "bold",color:'white'}}>
+          <h1 style={{fontSize: 40,fontFamily: "Cochin",fontWeight: "bold",color:'grey'}}>
             Mi Casa
           </h1>
         </Link>
@@ -133,25 +133,25 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
             </Page>
             <Page
               className="mainBtn"
-              variant="work"
-              onClick={() => setLinkHandler("work")}
+              variant="project"
+              onClick={() => setLinkHandler("project")}
             >
               <LinkTag>Projects</LinkTag>
             </Page>
             <Page
               className="mainBtn"
-              variant="about"
-              onClick={() => setLinkHandler("news")}
+              variant="testimonial"
+              onClick={() => setLinkHandler("testimonial")}
             >
-              <LinkTag>News</LinkTag>
+              <LinkTag>Testimonial</LinkTag>
             </Page>
-            <Page
+            {/* <Page
               className="mainBtn"
-              variant="about"
+              variant="contact"
               onClick={() => setLinkHandler("contact")}
             >
               <LinkTag>Contact</LinkTag>
-            </Page>
+            </Page> */}
           </div>
 
           <div className="info">

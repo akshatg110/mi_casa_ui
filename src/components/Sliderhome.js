@@ -37,7 +37,7 @@ export default () => (
                 className="slider-content"
                 style={{ background: `url('${item.image}') no-repeat center center` }}
               >
-                <div className="inner">
+                {/* <div className="inner">
                   <h1>{item.title}</h1>
                   <p>{item.description}</p>
                   <button onClick={()=> window.open(item.link, "_self")}>
@@ -46,7 +46,7 @@ export default () => (
                       {item.button}
                     </span>
                   </button>
-                </div>
+                </div> */}
               </div>
             ))}
         </Slider>

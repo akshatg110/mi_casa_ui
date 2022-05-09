@@ -1,31 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { withRouter } from "react-router-dom";
 import Reveal from 'react-reveal/Reveal';
 
-import {
-  LinkWrap,
-  Overlay
-} from "../styles/Work.styles";
-
-import Footer from '../components/Footer';
 
 import { Efect, Efect1, Efect2  } from "../styles/effect.styles";
   
 
 const Works = ({ history }) => {
-const [toCase, setCase] = useState("");
-const [coord, setCoords] = useState();
-
-useEffect(() => {
-    toCase &&
-      setTimeout(() => {
-        history.push(toCase);
-      }, 600);
-  }, [toCase, history]);
-
-
-  const handleCaseSwap = (e, uri) =>
-    e.x < coord + 15 && e.x > coord - 15 && setCase(uri);
 
   return (
     <div>
@@ -54,14 +35,6 @@ useEffect(() => {
               <div className="slick-slide d-block">
                 <div>
                   <div className="itm">
-                    <LinkWrap active={toCase === "/detailcase"}>
-                      <Overlay
-                        active={!!toCase}
-                        onMouseDown={(e) => setCoords(e.nativeEvent.x)}
-                        onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailcase")
-                        }
-                      >
                         <div className="bg">
                           <img
                             src="./img/projects/proj-1.png"
@@ -69,15 +42,13 @@ useEffect(() => {
                             alt="Imageworks"
                           />
                         </div>
-                        <div className="desc">
+                        {/* <div className="desc">
                           <div className="tag">Interior</div>
                           <div className="name">Entertainment Unit</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>
-                        </div>
-                      </Overlay>
-                    </LinkWrap>
+                        </div> */}
                   </div>
                 </div>
               </div>
@@ -87,14 +58,6 @@ useEffect(() => {
               <div className="slick-slide d-block">
                 <div>
                   <div className="itm">
-                    <LinkWrap active={toCase === "/detailcase1"}>
-                      <Overlay
-                        active={!!toCase}
-                        onMouseDown={(e) => setCoords(e.nativeEvent.x)}
-                        onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailcase1")
-                        }
-                      >
                         <div className="bg">
                           <img
                             src="./img/projects/proj-2.png"
@@ -102,15 +65,13 @@ useEffect(() => {
                             alt="Imageworks"
                           />
                         </div>
-                        <div className="desc">
+                        {/* <div className="desc">
                           <div className="tag">Furniture</div>
                           <div className="name">Mounted Unit</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>
-                        </div>
-                      </Overlay>
-                    </LinkWrap>
+                        </div> */}
                   </div>
                 </div>
               </div>
@@ -120,14 +81,6 @@ useEffect(() => {
               <div className="slick-slide d-block">
                 <div>
                   <div className="itm">
-                    <LinkWrap active={toCase === "/detailcase2"}>
-                      <Overlay
-                        active={!!toCase}
-                        onMouseDown={(e) => setCoords(e.nativeEvent.x)}
-                        onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailcase2")
-                        }
-                      >
                         <div className="bg">
                           <img
                             src="./img/projects/proj-3.png"
@@ -135,15 +88,13 @@ useEffect(() => {
                             alt="Imageworks"
                           />
                         </div>
-                        <div className="desc">
+                        {/* <div className="desc">
                           <div className="tag">Interior</div>
                           <div className="name">Contemporary Wall</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>
-                        </div>
-                      </Overlay>
-                    </LinkWrap>
+                        </div> */}
                   </div>
                 </div>
               </div>
@@ -153,14 +104,6 @@ useEffect(() => {
               <div className="slick-slide d-block">
                 <div>
                   <div className="itm">
-                    <LinkWrap active={toCase === "/detailcase3"}>
-                      <Overlay
-                        active={!!toCase}
-                        onMouseDown={(e) => setCoords(e.nativeEvent.x)}
-                        onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailcase3")
-                        }
-                      >
                         <div className="bg">
                           <img
                             src="./img/projects/proj-4.png"
@@ -168,15 +111,13 @@ useEffect(() => {
                             alt="Imageworks"
                           />
                         </div>
-                        <div className="desc">
+                        {/* <div className="desc">
                           <div className="tag">Interior</div>
                           <div className="name">Crockery Wall</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>
-                        </div>
-                      </Overlay>
-                    </LinkWrap>
+                        </div> */}
                   </div>
                 </div>
               </div>
@@ -186,14 +127,6 @@ useEffect(() => {
               <div className="slick-slide d-block">
                 <div>
                   <div className="itm">
-                    <LinkWrap active={toCase === "/detailcase"}>
-                      <Overlay
-                        active={!!toCase}
-                        onMouseDown={(e) => setCoords(e.nativeEvent.x)}
-                        onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailcase")
-                        }
-                      >
                         <div className="bg">
                           <img
                             src="./img/projects/project.png"
@@ -201,15 +134,13 @@ useEffect(() => {
                             alt="Imageworks"
                           />
                         </div>
-                        <div className="desc">
+                        {/* <div className="desc">
                           <div className="tag">Interior</div>
                           <div className="name">Entertainment Unit</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>
-                        </div>
-                      </Overlay>
-                    </LinkWrap>
+                        </div> */}
                   </div>
                 </div>
               </div>
@@ -219,14 +150,6 @@ useEffect(() => {
               <div className="slick-slide d-block">
                 <div>
                   <div className="itm">
-                    <LinkWrap active={toCase === "/detailcase1"}>
-                      <Overlay
-                        active={!!toCase}
-                        onMouseDown={(e) => setCoords(e.nativeEvent.x)}
-                        onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailcase1")
-                        }
-                      >
                         <div className="bg">
                           <img
                             src="./img/projects/proj-1.png"
@@ -234,15 +157,13 @@ useEffect(() => {
                             alt="Imageworks"
                           />
                         </div>
-                        <div className="desc">
+                        {/* <div className="desc">
                           <div className="tag">Furniture</div>
                           <div className="name">Mounted Unit</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>
-                        </div>
-                      </Overlay>
-                    </LinkWrap>
+                        </div> */}
                   </div>
                 </div>
               </div>
@@ -275,7 +196,7 @@ useEffect(() => {
         </section>
       </Reveal>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

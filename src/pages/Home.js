@@ -48,7 +48,7 @@ const Home = ({ history }) => {
         <section className="container">
           <div style={divStyle}>
             <img
-              src="./img/projects/proj-1.png"
+              src="./img/photo2.jpeg"
               // className="img-fluid"
               alt="Imageworks"
             />

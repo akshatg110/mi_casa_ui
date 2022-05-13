@@ -9,7 +9,7 @@ const content = [
       "With precision",
     button: "More Detail",
     link: "/#",
-    image: "./img/aboutImage.png"
+    image: "./img/photo2.jpeg"
   },
   {
     title: "Interior Expertise",

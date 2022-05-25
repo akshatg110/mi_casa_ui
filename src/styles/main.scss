@@ -209,7 +209,7 @@ section{
   z-index: 99;
   transition: all 0.3s ease;
   &.sticky {
-      background: #1b1b1b;
+      background: #ffffff;
       opacity: 1;
       transition: all 0.6s ease;
       .mainheader{
@@ -237,9 +237,9 @@ section{
   }
 }
 @media (max-width: 640px) {
-  .callus{
-    display: none;
-  }
+  // .callus{
+  //   display: none;
+  // }
 }
 .mainBtn{
   font-size: 1.8rem;

@@ -31,28 +31,21 @@ const Works = ({ history }) => {
       <Reveal effect="fadeInUp">
         <section className="container-fluid">
           <div className="row m-2-hor">
-            <div className="col-md-4 slick slickproject p-3">
+            {/* <div className="col-md-4 slick slickproject p-3">
               <div className="slick-slide d-block">
                 <div>
                   <div className="itm">
                         <div className="bg">
                           <img
-                            src="./img/projects/proj-1.png"
+                            src="./img/projects/project1.jpg"
                             className="img-fluid"
                             alt="Imageworks"
                           />
                         </div>
-                        {/* <div className="desc">
-                          <div className="tag">Interior</div>
-                          <div className="name">Entertainment Unit</div>
-                        </div>
-                        <div className="icon">
-                          <span>View Project</span>
-                        </div> */}
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="col-md-4 slick slickproject p-3">
               <div className="slick-slide d-block">
@@ -60,7 +53,7 @@ const Works = ({ history }) => {
                   <div className="itm">
                         <div className="bg">
                           <img
-                            src="./img/projects/proj-2.png"
+                            src="./img/projects/project2.jpg"
                             className="img-fluid"
                             alt="Imageworks"
                           />
@@ -83,7 +76,7 @@ const Works = ({ history }) => {
                   <div className="itm">
                         <div className="bg">
                           <img
-                            src="./img/projects/proj-3.png"
+                            src="./img/projects/project3.jpg"
                             className="img-fluid"
                             alt="Imageworks"
                           />
@@ -106,7 +99,7 @@ const Works = ({ history }) => {
                   <div className="itm">
                         <div className="bg">
                           <img
-                            src="./img/projects/proj-4.png"
+                            src="./img/projects/project4.jpg"
                             className="img-fluid"
                             alt="Imageworks"
                           />
@@ -129,7 +122,7 @@ const Works = ({ history }) => {
                   <div className="itm">
                         <div className="bg">
                           <img
-                            src="./img/projects/project.png"
+                            src="./img/projects/project5.jpg"
                             className="img-fluid"
                             alt="Imageworks"
                           />

@@ -77,14 +77,17 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
     const totop = document.getElementById("scroll-to-top")
     const sticky = header.offsetTop;
     const scrollCallBack = window.addEventListener("scroll", () => {
-    if (window.pageYOffset > sticky + 0) {
-      header.classList.add("sticky");
-      totop.classList.add("show");
-    } else {
-      header.classList.remove("sticky");
-      totop.classList.remove("show");
-    } 
+    // if (window.pageYOffset > sticky + 0) {
+    header.classList.add("sticky");
+    totop.classList.add("show");
+    // }
+    // else {
+    //   header.classList.remove("sticky");
+    //   totop.classList.remove("show");
+    // } 
     });
+    header.classList.add("sticky");
+    totop.classList.add("show");
     return () => {
       window.removeEventListener("scroll", scrollCallBack);
     };
@@ -96,7 +99,7 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
       <div className="logo">
         <Link to="/" style={{ textDecoration: 'none' }}>
           {/* <img src="./img/nesh2.png" className="img-fluid" alt="#" /> */}
-          <h1 style={{fontSize: 40,fontFamily: "Cochin",fontWeight: "bold",color:'grey'}}>
+          <h1 style={{fontSize: 40,fontFamily: "Cochin",fontWeight: "bold",color:'black'}}>
             Mi Casa
           </h1>
         </Link>

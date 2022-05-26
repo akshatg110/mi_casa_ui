@@ -7,10 +7,8 @@ import { Efect, Efect1, Efect2  } from "../styles/effect.styles";
 
 const Home = ({ history }) => {
   const [width, setWidth]   = useState(window.innerWidth);
-  const [height, setHeight] = useState(window.innerHeight);
   const updateDimensions = () => {
       setWidth(window.innerWidth);
-      setHeight(window.innerHeight);
   }
   useEffect(() => {
       window.addEventListener("resize", updateDimensions);
@@ -36,7 +34,7 @@ const Home = ({ history }) => {
   const divStyle = {
   'border': '1px solid #c3c3c3',
   'display': 'flex',
-  'flex-direction': 'column'
+  'flexDirection': 'column'
   };
   return (
     <div>
@@ -48,25 +46,40 @@ const Home = ({ history }) => {
         <section className="container">
           <div style={divStyle}>
             <img
-              src="./img/photo2.jpeg"
+              src="./img/projects/project1.webp"
               // className="img-fluid"
               alt="Imageworks"
             />
           </div>
           <div style={divStyle}>
             <img
-              src="./img/projects/proj-2.png"
+              src="./img/projects/project2.webp"
               // className="img-fluid"
               alt="Imageworks"
             />
           </div>
           <div style={divStyle}>
             <img
-              src="./img/projects/proj-3.png"
+              src="./img/projects/project3.webp"
               // className="img-fluid"
               alt="Imageworks"
             />
           </div>
+          <div style={divStyle}>
+            <img
+              src="./img/projects/project4.webp"
+              // className="img-fluid"
+              alt="Imageworks"
+            />
+          </div>
+          <div style={divStyle}>
+            <img
+              src="./img/projects/project5.webp"
+              // className="img-fluid"
+              alt="Imageworks"
+            />
+          </div>
+          <button style={{marginLeft:"40%",marginTop:'5px'}}onClick={()=>{history.push('/project')}}>Show More</button>
         </section> : 
         <section className="jumbotron jumbomain">
         <Slider />

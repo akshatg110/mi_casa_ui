@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import { withRouter } from "react-router-dom";
 import Reveal from 'react-reveal/Reveal';
 
@@ -7,7 +7,18 @@ import { Efect, Efect1, Efect2  } from "../styles/effect.styles";
   
 
 const Works = ({ history }) => {
+  function importAll(r) {
+    return r.keys().map(r);
+  }
+  const [images, setImages] = useState([]);
+  const [isInitialRender, setIsInitialRender] = useState(true);
 
+  // Similar to componentDidMount and componentDidUpdate:
+  useEffect(() => {
+    // Update the document title using the browser API
+    setIsInitialRender(false);
+    setImages(importAll(require.context('../../public/img/projects', false, /\.(webp)$/)))
+  },[isInitialRender]);
   return (
     <div>
       <Efect />
@@ -31,6 +42,25 @@ const Works = ({ history }) => {
       <Reveal effect="fadeInUp">
         <section className="container-fluid">
           <div className="row m-2-hor">
+            {images.map((item)=>{
+              return(
+                <div className="col-md-4 slick slickproject p-3">
+              <div className="slick-slide d-block">
+                <div>
+                  <div className="itm">
+                        <div className="bg">
+                          <img
+                            src={item}
+                            className="img-fluid"
+                            alt="Imageworks"
+                          />
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              )
+            })}
             {/* <div className="col-md-4 slick slickproject p-3">
               <div className="slick-slide d-block">
                 <div>
@@ -47,24 +77,25 @@ const Works = ({ history }) => {
               </div>
             </div> */}
 
+            {/* 
             <div className="col-md-4 slick slickproject p-3">
               <div className="slick-slide d-block">
                 <div>
                   <div className="itm">
                         <div className="bg">
                           <img
-                            src="./img/projects/project2.jpg"
+                            src="./img/projects/project2.webp"
                             className="img-fluid"
                             alt="Imageworks"
                           />
                         </div>
-                        {/* <div className="desc">
+                        <div className="desc">
                           <div className="tag">Furniture</div>
                           <div className="name">Mounted Unit</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>
-                        </div> */}
+                        </div>
                   </div>
                 </div>
               </div>
@@ -76,18 +107,18 @@ const Works = ({ history }) => {
                   <div className="itm">
                         <div className="bg">
                           <img
-                            src="./img/projects/project3.jpg"
+                            src="./img/projects/project4.webp"
                             className="img-fluid"
                             alt="Imageworks"
                           />
                         </div>
-                        {/* <div className="desc">
+                        <div className="desc">
                           <div className="tag">Interior</div>
                           <div className="name">Contemporary Wall</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>
-                        </div> */}
+                        </div>
                   </div>
                 </div>
               </div>
@@ -99,18 +130,18 @@ const Works = ({ history }) => {
                   <div className="itm">
                         <div className="bg">
                           <img
-                            src="./img/projects/project4.jpg"
+                            src="./img/projects/project3.webp"
                             className="img-fluid"
                             alt="Imageworks"
                           />
                         </div>
-                        {/* <div className="desc">
+                        <div className="desc">
                           <div className="tag">Interior</div>
                           <div className="name">Crockery Wall</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>
-                        </div> */}
+                        </div>
                   </div>
                 </div>
               </div>
@@ -122,18 +153,18 @@ const Works = ({ history }) => {
                   <div className="itm">
                         <div className="bg">
                           <img
-                            src="./img/projects/project5.jpg"
+                            src="./img/projects/project5.webp"
                             className="img-fluid"
                             alt="Imageworks"
                           />
                         </div>
-                        {/* <div className="desc">
+                        <div className="desc">
                           <div className="tag">Interior</div>
                           <div className="name">Entertainment Unit</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>
-                        </div> */}
+                        </div>
                   </div>
                 </div>
               </div>
@@ -145,18 +176,18 @@ const Works = ({ history }) => {
                   <div className="itm">
                         <div className="bg">
                           <img
-                            src="./img/projects/proj-1.png"
+                            src="./img/projects/project6.webp"
                             className="img-fluid"
                             alt="Imageworks"
                           />
                         </div>
-                        {/* <div className="desc">
+                        <div className="desc">
                           <div className="tag">Furniture</div>
                           <div className="name">Mounted Unit</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>
-                        </div> */}
+                        </div>
                   </div>
                 </div>
               </div>
@@ -184,7 +215,7 @@ const Works = ({ history }) => {
                   </div>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </section>
       </Reveal>

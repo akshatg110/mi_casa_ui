@@ -9,7 +9,7 @@ const content = [
       "With precision",
     button: "More Detail",
     link: "/#",
-    image: "./img/photo2.jpeg"
+    image: "./img/projects/project1.webp"
   },
   {
     title: "Interior Expertise",
@@ -17,7 +17,7 @@ const content = [
       "Stylish living",
     button: "More Detail",
     link: "/#",
-    image: "./img/slider-4.png"
+    image: "./img/projects/project2.webp"
   },
   {
     title: "Land of Residence",
@@ -25,7 +25,7 @@ const content = [
       "According lifestyle",
     button: "More Detail",
     link: "/#",
-    image: "./img/slider-3.png"
+    image: "./img/projects/project3.webp"
   }
 ];
 

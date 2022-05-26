@@ -75,7 +75,6 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
   useEffect(() => {
     const header = document.getElementById("header");
     const totop = document.getElementById("scroll-to-top")
-    const sticky = header.offsetTop;
     const scrollCallBack = window.addEventListener("scroll", () => {
     // if (window.pageYOffset > sticky + 0) {
     header.classList.add("sticky");
